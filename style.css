@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    position: relative;
+}
+
+.cabecalho {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+    z-index: 1000;
+}
+
+.cabecalho_nome {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.cabecalho_link {
+    font-size: 20px;
+}
+
+.cabecalho_link a:hover {
+    background-color: #6c757d;
+    font-size: 2rem;
+    border-radius: 15px;
+}
+
+.link_decoration {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+}
+
+.link_decoration:hover {
+    font-size: 1.4rem;
+    transition: 0.5s;
+}
+
+.img_social {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+#inicio {
+    height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10vh;
+    box-shadow: 8px 0 16px rgba(0, 0, 0, 0.24);
+}
+
+.inicio_conteudo {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 30px;
+    width: 50vw;
+}
+
+.perfil {
+    width: 50vw;
+}
+
+.foto_perfil {
+    margin-bottom: 50px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#sobre {
+    background-color: #6c757d7c;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh;
+}
+
+#sobre h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #343a40;
+}
+
+.bloco_sobre {
+    display: flex;
+    align-items: center;
+}
+
+.sobre_imagem {
+    margin: 30px;
+}
+
+.imagem {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 30px;
+}
+
+.sobre_conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 60%;
+    height: 200px;
+}
+
+.sobre_conteudo p {
+    margin: 15px;
+}
+
+#linguagens {
+    background-color: #f8f9fa;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh;
+    box-shadow: 8px 0 16px rgba(0, 0, 0, 0.24);
+}
+
+#linguagens h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.bloco_linguagens {
+    display: flex;
+}
+
+.linguagem {
+    background-color: #6c757d7c;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.img_linguagem {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.conteudo_linguagens {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+
+.linguagem p {
+    height: 200px;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex: auto;
+} 
+
+
+#Projetos {
+    background-color: #6c757d7c;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+}
+
+#Projetos h1 {
+    font-size: 4rem; 
+    text-align: center; 
+}
+
+.projeto_conteudo {
+    position: relative;
+    height: 510px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.imagem_projeto {
+    max-height: 520px;
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra {
+    width: 70px;
+    height: 16px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.barra:hover {
+    background-color: #6c757d7c;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 33%;
+    transition: 0.6s;
+}
+
+#slide1:checked ~ .slide_principal {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slide_principal {
+    margin-left: -33%;
+}
+
+#slide3:checked ~ .slide_principal {
+    margin-left: -66%;
+}
+
+
+#contato {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    padding: 10vh;
+    box-shadow: -8px 0 16px rgba(0, 0, 0, 0.2);
+}
+
+#contato h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+form label input,textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form label button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+form label button:hover {
+    background-color: #004080;
+    transition: 0.3s;
+}
+
+#rodape {
+    background-color:  #343a40;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#rodape a:hover {
+    color: gray;
+    text-decoration: underline;
+}

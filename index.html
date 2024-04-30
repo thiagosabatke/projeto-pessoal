@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="cabecalho">
+        <div class="cabecalho_nome">
+            <p>Thiago Sabatke de Andrade</p>
+        </div>
+        <div class="cabecalho_link">
+            <a class="link_decoration" href="#inicio">Início</a>
+            <a class="link_decoration" href="#sobre">Sobre</a>
+            <a class="link_decoration" href="#linguagens">Linguagens</a>
+            <a class="link_decoration" href="#Projetos">Projetos</a>
+            <a class="link_decoration" href="#contato">Contato</a>
+        </div>
+        <div>
+            <a href="https://github.com/thiagosabatke" target="_blank">
+                <img class="img_social" src="imagem/github.png" alt="github">
+            </a>
+            <a href="https://www.instagram.com/thiago.sabxtke/" target="_blank">
+                <img class="img_social" src="imagem/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/thiago-sabatke-672827270/" target="_blank">
+                <img class="img_social" src="imagem/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/ThzinDev">
+                <img class="img_social" src="imagem/twitter.png" alt="twitter">
+            </a>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="inicio">
+        <div class="inicio_conteudo">
+            <h1>Olá, eu sou o Thiago</h1>
+            <p>Desenvolvedor Web 🧑‍💻</p>
+        </div>
+        <div class="perfil">
+            <img class="foto_perfil" src="imagem/sobre.png" alt="foto de perfil">
+        </div>
+    </section>
+    <section id="sobre">
+        <h1>Sobre</h1>
+        <div class="bloco_sobre">
+            <div class="sobre_imagem">
+                <img class="imagem" src="imagem/foto.perfil.png" alt="foto sobre">
+            </div>
+            <div class="sobre_conteudo">
+                <p>
+                    Meu nome é Thiago, atualmente estou no 3º período de Engenharia de Software na Unicesumar. Tenho um conhecimento sólido na área de desenvolvimento web, especialmente em HTML, CSS e JavaScript. Além disso, tenho conhecimento da linguagem Python. Atualmente estou trabalhando como CLT, mas tenho como objetivo atuar na área de desenvolvimento de software.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="linguagens">
+        <h1>Linguagens</h1>
+        <div class="bloco_linguagens">
+            <div class="linguagem">
+                <img class="img_linguagem" src="imagem/html.png" alt="logo html">
+                <div class="conteudo_linguagens">
+                    <p>Linguagem de marcação usada para estruturar o conteúdo de uma página da web.</p>
+                </div>
+            </div>
+            <div class="linguagem">
+                <img class="img_linguagem" src="imagem/css-3.png" alt="logo css">
+                <div class="conteudo_linguagens">
+                    <p>Linguagem de estilo que define a aparência e o layout das páginas da web.</p>
+                </div>
+            </div>
+            <div class="linguagem">
+                <img class="img_linguagem" src="imagem/javascript.png" alt="logo javascript">
+                <div class="conteudo_linguagens">
+                    <p>Linguagem de programação usada para criar interatividade em páginas da web.</p>
+                </div>
+            </div>
+            <div class="linguagem">
+                <img class="img_linguagem" src="imagem/python.png" alt="python">
+                <div class="conteudo_linguagens">
+                    <p>Linguagem de programação versátil usada para desenvolver uma variedade de aplicativos, desde web até inteligência artificial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projetos">
+      <h1>Meus Projetos</h1>
+        <div class="projeto_conteudo">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <div class="slide slide_principal">
+                    <img class="imagem_projeto" src="imagem/projeto-pessoal 1.png" alt="projeto pessoal">
+                </div>
+                <div class="slide">
+                    <img class="imagem_projeto" src="imagem/lista_tarefas.png" alt="projeto lista de tarefas">
+                </div>
+                <div class="slide">
+                    <img class="imagem_projeto" src="imagem/gestao_notas.png" alt="projeto de gestão de notas">
+                </div>
+            </div>
+            <div class="navegacao">
+                <label class="barra" for="slide1"></label>
+                <label class="barra" for="slide2"></label>
+                <label class="barra" for="slide3"></label>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h1>Fale Comigo</h1>
+        <form>
+            <label for="input_nome">
+                Nome: <input type="text" name="nometxt" id="input_nome" required>
+            </label>
+            <label for="input_email">
+                Email: <input type="email" name="emailtxt" id="input_email" required>
+            </label>
+            <label for="input_telefone">
+                Telefone: <input type="number" name="telefonetxt" id="input_telefone" required>
+            </label>
+            <label for="input_mensagem">
+                Mensagem: <textarea name="mensagemtxt" id="input_mensagem" cols="30" rows="5" required></textarea>
+            </label>
+            <label>
+                <button onclick="EnviarMensagem()">Enviar</button>
+            </label>
+        </form>
+    </section>
+</main>
+<footer id="rodape">
+    Developed by <a href="https://github.com/thiagosabatke">Thiago Sabatke</a>. © 2024 All Rights Reserved.
+</footer>
+</body>
+</html>
