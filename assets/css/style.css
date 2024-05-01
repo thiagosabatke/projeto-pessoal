@@ -202,9 +202,9 @@ header {
 
 .projeto_conteudo {
     position: relative;
-    height: 510px;
+    height: 540px;
     width: 1000px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .imagem_projeto {
@@ -215,7 +215,7 @@ header {
 
 .navegacao {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
