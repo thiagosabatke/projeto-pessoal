@@ -10,3 +10,24 @@ function EnviarMensagem(){
         alert(`${nome}, sua mensagem foi enviada com sucesso!`)
     }
 }
+
+function mudarProjeto1(){
+    document.getElementById('nome_do_projeto').textContent = 'Projeto Pessoal';
+    let link_projeto = document.getElementById('link_do_projeto');
+    link_projeto.href = 'https://github.com/thiagosabatke/projeto-pessoal'
+    link_projeto.textContent = 'github';
+}
+
+function mudarProjeto2(){
+    document.getElementById('nome_do_projeto').textContent = 'Projeto ToDo-List'
+    let link_projeto = document.getElementById('link_do_projeto');
+    link_projeto.href = 'https://github.com/thiagosabatke/ToDo-List-JS'
+    link_projeto.textContent = 'github';
+}
+
+function mudarProjeto3(){
+    document.getElementById('nome_do_projeto').textContent = 'Projeto Gestão de Notas'
+    let link_projeto = document.getElementById('link_do_projeto');
+    link_projeto.href = 'https://github.com/thiagosabatke/Gestao-de-Notas-JS'
+    link_projeto.textContent = 'github';
+}
